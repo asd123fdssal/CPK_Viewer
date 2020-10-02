@@ -2,6 +2,7 @@
 for process capability analysis
  
 # 1. DATA Format
+
 > Data file extension
 
 >extension |
@@ -19,3 +20,13 @@ for process capability analysis
 >DATA | DATA | DATA |
 >DATA | DATA | DATA |
 >DATA | DATA | DATA |
+
+# 2. mathematical expression
+
+```
+((USL - LSL) / (6 * STDEV)) - ABS(((LSL + USL) / 2 - AVERAGE) / (3 * STDEV)) 
+```
+
+# 3. Library
+
+> XChart : https://knowm.org/open-source/xchart/
